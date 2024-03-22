@@ -1,0 +1,38 @@
+.main {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    width: calc(100% - 4rem);
+    flex-direction: row;
+    padding: 2rem;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  order: 1;
+  
+
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+  }
+  
+
+  &Secondary {
+    zoom: 0.8;
+    width: 100%;
+    order: 0;
+
+    @media screen and (min-width: 1024px) {
+      width: auto;
+      order: 2;
+    }
+  }
+}

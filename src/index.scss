@@ -1,0 +1,40 @@
+[data-theme="light"] {
+  --color-bg: #d7eaca;
+  --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+}
+
+:root {
+  font-family: "PT Serif Caption", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+}
+
+a {
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
